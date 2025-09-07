@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arquitecto — Portafolio Profesional</title>
+  <meta name="description" content="Portafolio y servicios de arquitectura. Diseños residenciales, comerciales y dirección de obra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            },
+          accent: '#10b981',
+          ink: '#0f172a'
+          },
+        fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans','Helvetica Neue','Arial','"Apple Color Emoji"','"Segoe UI Emoji"'] }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(8px); background-color: rgba(255,255,255,0.75); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(2,6,23,0.10), 0 2px 6px rgba(2,6,23,0.08); }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 selection:bg-primary-200/80">
+  <!-- Top Bar -->
+  <div class="hidden md:block bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-2 text-sm text-slate-600 flex items-center justify-between">
+      <div>¿Tienes un proyecto? <a href="#contacto" class="text-primary-600 hover:text-primary-700 font-medium">Hablemos</a></div>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" class="hover:text-primary-700" aria-label="WhatsApp" title="WhatsApp">📱 WhatsApp</a>
+        <a href="https://facebook.com/YOUR_FACEBOOK" class="hover:text-primary-700" aria-label="Facebook" title="Facebook">📘 Facebook</a>
+        <a href="https://instagram.com/YOUR_INSTAGRAM" class="hover:text-primary-700" aria-label="Instagram" title="Instagram">📷 Instagram</a>
+        <a href="mailto:tu.correo@dominio.com" class="hover:text-primary-700" aria-label="Email" title="Email">✉️ Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/70 glass border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-2xl bg-primary-600 text-white grid place-content-center font-bold">AR</div>
+          <span class="text-lg md:text-xl font-semibold tracking-tight">[Francisco Javier Sanchez Diaz] · Arquitecto</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#servicios" class="hover:text-primary-700">Servicios</a>
+          <a href="#proyectos" class="hover:text-primary-700">Proyectos</a>
+          <a href="#acerca" class="hover:text-primary-700">Acerca</a>
+          <a href="#testimonios" class="hover:text-primary-700">Testimonios</a>
+          <a href="#contacto" class="btn-contact px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 shadow-soft">Contacto</a>
+        </nav>
+        <button id="btnMenu" class="md:hidden p-2 rounded-lg hover:bg-slate-100" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4">
+        <div class="grid gap-2 text-sm font-medium">
+          <a href="#servicios" class="px-3 py-2 rounded-lg hover:bg-slate-100">Servicios</a>
+          <a href="#proyectos" class="px-3 py-2 rounded-lg hover:bg-slate-100">Proyectos</a>
+          <a href="#acerca" class="px-3 py-2 rounded-lg hover:bg-slate-100">Acerca</a>
+          <a href="#testimonios" class="px-3 py-2 rounded-lg hover:bg-slate-100">Testimonios</a>
+          <a href="#contacto" class="px-3 py-2 rounded-lg rounded-xl bg-primary-600 text-white">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <svg class="absolute -right-20 -top-20 w-[520px] opacity-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#60a5fa" d="M38.3,-57.1C48.8,-53.4,55.4,-41.4,63.5,-29.4C71.6,-17.4,81.2,-5.5,82.3,6.4C83.3,18.3,75.8,30.2,66.3,40.9C56.8,51.6,45.4,61,32.9,67.1C20.4,73.3,6.8,76.2,-6.4,84.6C-19.6,93,-39.2,107,-52.5,103.1C-65.8,99.2,-72.9,77.5,-78.8,58.3C-84.7,39.1,-89.4,22.3,-90.1,5C-90.8,-12.3,-87.6,-30,-78.8,-42.5C-70.1,-55.1,-55.8,-62.4,-41.5,-66.9C-27.2,-71.3,-13.6,-72.8,-0.8,-71.4C12,-70,24,-65.7,38.3,-57.1Z" transform="translate(100 100)"/></svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-ink">Arquitectura que une <span class="text-primary-600">forma</span> y <span class="text-primary-600">función</span></h1>
+        <p class="mt-5 text-slate-600 text-lg">[Escribe aquí tu propuesta de valor: diseño residencial y comercial, dirección de obra, remodelaciones y más.]</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#proyectos" class="px-5 py-3 rounded-xl bg-primary-600 text-black hover:bg-primary-700 shadow-soft">Ver proyectos</a>
+          <a href="#contacto" class="px-5 py-3 rounded-xl border border-slate-300 hover:border-primary-400 hover:text-primary-700">Cotiza tu proyecto</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-slate-500">
+          <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Agenda disponible</div>
+          <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12l9-5-9-5-9 5 9 5z"/></svg> 10+ años de experiencia</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-soft bg-white">
+          <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1600&auto=format&fit=crop" alt="Render arquitectónico" class="w-full h-full object-cover"/>
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl p-4 shadow-soft hidden sm:block">
+          <div class="text-sm font-semibold">Certificado • CMIC</div>
+          <div class="text-xs text-slate-500">Dirección de obra y seguridad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="md:flex items-end justify-between gap-6">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-ink">Servicios</h2>
+        <p class="text-slate-600 md:max-w-xl">Selecciona lo que necesitas. Puedes editar títulos y descripciones.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Servicio 1 -->
+        <article class="p-6 rounded-2xl border bg-slate-50 hover:bg-white hover:shadow-soft transition">
+          <div class="w-10 h-10 rounded-xl bg-primary-100 grid place-content-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M3 10l9-7 9 7"/><path d="M9 21V10h6v11"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Diseño arquitectónico</h3>
+          <p class="mt-2 text-slate-600 text-sm">Anteproyecto, proyecto ejecutivo y renders fotorrealistas.</p>
+        </article>
+        <!-- Servicio 2 -->
+        <article class="p-6 rounded-2xl border bg-slate-50 hover:bg-white hover:shadow-soft transition">
+          <div class="w-10 h-10 rounded-xl bg-primary-100 grid place-content-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21V13h8v8"/><path d="M12 3v10"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Dirección y supervisión</h3>
+          <p class="mt-2 text-slate-600 text-sm">Control de obra, presupuestos y cronogramas.</p>
+        </article>
+        <!-- Servicio 3 -->
+        <article class="p-6 rounded-2xl border bg-slate-50 hover:bg-white hover:shadow-soft transition">
+          <div class="w-10 h-10 rounded-xl bg-primary-100 grid place-content-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+          </div>
+          <h3 class="font-bold text-lg">Remodelaciones</h3>
+          <p class="mt-2 text-slate-600 text-sm">Interiorismo, ampliaciones y actualización de espacios.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="md:flex items-end justify-between gap-6">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-ink">Proyectos</h2>
+        <p class="text-slate-600 md:max-w-xl">Reemplaza estas imágenes y textos por tus obras.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card Proyecto -->
+        <article class="group overflow-hidden rounded-2xl bg-white border shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop" alt="Casa moderna"/>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold">Casa Patio • 240 m²</h3>
+            <p class="text-sm text-slate-600 mt-1">Residencial | 2024 | CDMX</p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-white border shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1487956382158-bb926046304a?q=80&w=1600&auto=format&fit=crop" alt="Oficina"/>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold">Oficinas Minimal • 600 m²</h3>
+            <p class="text-sm text-slate-600 mt-1">Comercial | 2023 | Puebla</p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-2xl bg-white border shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition" src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1600&auto=format&fit=crop" alt="Interiorismo"/>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold">Ático Lumina • Interiorismo</h3>
+            <p class="text-sm text-slate-600 mt-1">Residencial | 2022 | Querétaro</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de mí -->
+  <section id="acerca" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 items-center">
+      <div class="md:col-span-1">
+        <div class="aspect-square rounded-2xl overflow-hidden border shadow-soft bg-white">
+          <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200&auto=format&fit=crop" alt="Arquitecto" class="w-full h-full object-cover"/>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-ink">[Tu Nombre] • Arquitecto</h2>
+        <p class="mt-4 text-slate-600">[Escribe una bio breve: formación, especialidades, certificaciones y enfoque de diseño].</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-600"></span> Proyectos residenciales y comerciales</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-600"></span> BIM / AutoCAD / Revit / SketchUp</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-600"></span> Gestión de permisos y normativas</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-600"></span> Presupuestos y cronogramas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-ink">Testimonios</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="p-6 bg-white border rounded-2xl shadow-sm">
+          <blockquote class="text-slate-700">“Resultados impecables y atención al detalle en cada fase.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Cliente Residencial</figcaption>
+        </figure>
+        <figure class="p-6 bg-white border rounded-2xl shadow-sm">
+          <blockquote class="text-slate-700">“Nuestro local ganó luz, funcionalidad y una estética moderna.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Cliente Comercial</figcaption>
+        </figure>
+        <figure class="p-6 bg-white border rounded-2xl shadow-sm">
+          <blockquote class="text-slate-700">“Excelente coordinación de obra y cumplimiento de tiempos.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Desarrolladora</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="md:flex items-end justify-between gap-6">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-ink">Contacto</h2>
+        <p class="text-slate-600 md:max-w-xl">Completa el formulario o escribe por WhatsApp. Edita el correo y teléfono en el HTML.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <!-- Formulario simple -->
+        <form class="bg-slate-50 border rounded-2xl p-6 shadow-soft" onsubmit="enviarFormulario(event)">
+          <div class="grid gap-4">
+            <div>
+              <label class="text-sm text-slate-600">Nombre</label>
+              <input required type="text" name="nombre" class="mt-1 w-full rounded-xl border px-4 py-2 outline-none focus:ring-2 focus:ring-primary-200" placeholder="Tu nombre" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="text-sm text-slate-600">Correo</label>
+                <input required type="email" name="correo" class="mt-1 w-full rounded-xl border px-4 py-2 outline-none focus:ring-2 focus:ring-primary-200" placeholder="tu@correo.com" />
+              </div>
+              <div>
+                <label class="text-sm text-slate-600">Teléfono</label>
+                <input type="tel" name="telefono" class="mt-1 w-full rounded-xl border px-4 py-2 outline-none focus:ring-2 focus:ring-primary-200" placeholder="55 0000 0000" />
+              </div>
+            </div>
+            <div>
+              <label class="text-sm text-slate-600">Mensaje</label>
+              <textarea required name="mensaje" rows="4" class="mt-1 w-full rounded-xl border px-4 py-2 outline-none focus:ring-2 focus:ring-primary-200" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="px-5 py-3 rounded-xl bg-primary-600 text-white hover:bg-primary-700">Enviar</button>
+              <a id="btnWA" href="#" target="_blank" class="px-5 py-3 rounded-xl border hover:border-primary-400 hover:text-primary-700">Enviar por WhatsApp</a>
+            </div>
+            <p id="msgOk" class="hidden text-emerald-600 text-sm">¡Gracias! He recibido tu mensaje.</p>
+          </div>
+        </form>
+
+        <!-- Datos de contacto -->
+        <div class="space-y-6">
+          <div class="p-6 bg-white border rounded-2xl shadow-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-primary-100 grid place-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold">Área de cobertura</div>
+                <div class="text-sm text-slate-600">CDMX • Puebla • Atlixco</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 bg-white border rounded-2xl shadow-sm">
+            <div class="font-semibold">Email</div>
+            <a class="text-primary-700" href="mailto:tu.correo@dominio.com">xaviersanchz1@gmail.com</a>
+            <div class="mt-3 font-semibold">Teléfono</div>
+            <a class="text-primary-700" href="tel:+522222064469">+52 222 206 4469</a>
+          </div>
+          <div class="p-6 bg-white border rounded-2xl shadow-sm">
+            <div class="font-semibold">Redes</div>
+            <div class="flex gap-4 mt-2">
+              <a href="https://wa.me/+522222064469" class="hover:opacity-80" aria-label="WhatsApp" title="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163A11.867 11.867 0 0 1 0 11.993C0 5.373 5.373 0 11.994 0c3.195 0 6.2 1.245 8.475 3.514A11.88 11.88 0 0 1 24 11.993c0 6.62-5.373 11.993-12.006 11.993a11.9 11.9 0 0 1-5.634-1.448L.057 24zM6.6 19.36c1.676.995 3.276 1.591 5.392 1.591 5.448 0 9.886-4.434 9.886-9.89 0-5.455-4.438-9.89-9.886-9.89-5.456 0-9.89 4.435-9.89 9.89 0 2.147.663 3.799 1.774 5.487l-.957 3.497 3.681-.685zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.297-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              </a>
+              <a href="https://facebook.com/YOUR_FACEBOOK" class="hover:opacity-80" aria-label="Facebook" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.49v-9.294H9.691v-3.622h3.125V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.314h3.59l-.467 3.622h-3.123V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/></svg>
+              </a>
+              <a href="https://instagram.com/YOUR_INSTAGRAM" class="hover:opacity-80" aria-label="Instagram" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2.2A2.8 2.8 0 1112 16.8 2.8 2.8 0 0112 9.2zm5.5-.9a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" class="hover:opacity-80" aria-label="LinkedIn" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.1c.5-1 1.8-2 3.8-2 4.1 0 4.9 2.7 4.9 6.2V24h-4v-7.6c0-1.8 0-4.2-2.6-4.2s-3 2-3 4.1V24h-4V8.5z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-slate-600 grid md:grid-cols-2 gap-6">
+      <div>
+        <div class="font-semibold">[Tu Nombre] • Arquitecto</div>
+        <div class="mt-1">© <span id="year"></span> Todos los derechos reservados.</div>
+      </div>
+      <div class="md:text-right space-x-4">
+        <a href="#inicio" class="hover:text-primary-700">Inicio</a>
+        <a href="#servicios" class="hover:text-primary-700">Servicios</a>
+        <a href="#proyectos" class="hover:text-primary-700">Proyectos</a>
+        <a href="#contacto" class="hover:text-primary-700">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="fixed bottom-5 right-5 w-14 h-14 rounded-full bg-emerald-500 text-white grid place-content-center shadow-soft hover:scale-105 transition" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163A11.867 11.867 0 0 1 0 11.993C0 5.373 5.373 0 11.994 0c3.195 0 6.2 1.245 8.475 3.514A11.88 11.88 0 0 1 24 11.993c0 6.62-5.373 11.993-12.006 11.993a11.9 11.9 0 0 1-5.634-1.448L.057 24zM6.6 19.36c1.676.995 3.276 1.591 5.392 1.591 5.448 0 9.886-4.434 9.886-9.89 0-5.455-4.438-9.89-9.886-9.89-5.456 0-9.89 4.435-9.89 9.89 0 2.147.663 3.799 1.774 5.487l-.957 3.497 3.681-.685zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.297-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <!-- Script -->
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const btnMenu = document.getElementById('btnMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (btnMenu) btnMenu.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Envío básico: mailto + WhatsApp prellenado
+    function enviarFormulario(e){
+      e.preventDefault();
+      const form = e.target;
+      const nombre = form.nombre.value.trim();
+      const correo = form.correo.value.trim();
+      const telefono = form.telefono.value.trim();
+      const mensaje = form.mensaje.value.trim();
+
+      const asunto = encodeURIComponent('Nuevo proyecto: ' + nombre);
+      const cuerpo = encodeURIComponent(`Nombre: ${nombre}\nCorreo: ${correo}\nTeléfono: ${telefono}\nMensaje: ${mensaje}`);
+      window.location.href = `mailto:tu.correo@dominio.com?subject=${asunto}&body=${cuerpo}`;
+
+      // WhatsApp link (reemplaza YOUR_WHATSAPP_NUMBER con tu número en formato internacional, ej: 5215512345678)
+      const wa = `https://wa.me/YOUR_WHATSAPP_NUMBER?text=${encodeURIComponent('Hola, soy ' + nombre + '. ' + mensaje + ' | Tel: ' + telefono + ' | Email: ' + correo)}`;
+      document.getElementById('btnWA').href = wa;
+
+      const ok = document.getElementById('msgOk');
+      ok.classList.remove('hidden');
+      ok.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  </script>
+
+  <!-- SEO / Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "[Tu Nombre] Arquitecto",
+    "image": "https://tusitio.com/tu-foto-o-logo.jpg",
+    "url": "https://tusitio.com",
+    "telephone": "+52 55 0000 0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "CDMX",
+      "addressRegion": "MX"
+    },
+    "sameAs": [
+      "https://facebook.com/YOUR_FACEBOOK",
+      "https://instagram.com/YOUR_INSTAGRAM",
+      "https://www.linkedin.com/in/YOUR_LINKEDIN"
+    ]
+  }
+  </script>
+</body>
+</html>
